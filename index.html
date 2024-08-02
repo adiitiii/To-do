@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To-do Website</title>
+		<link href="./css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--------------------------- INITIAL SCREEN ---------------------------------------------->
+		<!-- Heading -->
+		<div class="todo-wrapper">
+			<div class="main-heading__todo-wrapper flex">
+				<div class="initial-heading__todo-wrapper">Todays tasks</div>
+				<input class="after-heading__todo-wrapper hide" />
+				<div class="edit-heading__todo-wrapper">
+					<ion-icon class="edit-pen-icon" name="create"></ion-icon>
+				</div>
+			</div>
+
+			<!-- Adding tasks -->
+			<div class="add-tasks__todo-wrapper">
+				<div class="initial-screen-add">
+					<img src="./initial-screen-img.svg" class="initial-img" />
+				</div>
+
+				<!-- Add icon for adding tasks -->
+				<div class="initial-screen-add-icon flex">
+					<ion-icon
+						class="initial-add-icon"
+						name="add-circle-outline"
+					></ion-icon>
+				</div>
+				<!--------------------------- INITIAL SCREEN ENDS ---------------------------------------------->
+
+				<!--------------------------- SECOND SCREEN STARTS ---------------------------------------------->
+
+				<!-- Screen after clicking on add icon -->
+				<div class="after-icon-new-task flex hide">
+					<input
+						class="list-tasks"
+						id="task-name_user-input"
+						placeholder="Add new task"
+					/>
+					<button class="add-task-btn">ADD</button>
+				</div>
+			</div>
+
+			<!-- Upcoming Tasks -->
+			<div class="todo-upcomingTasks-mainBox flex hide">
+				<div class="todo-upcomingTasks-wrapper">
+					<h2 class="todo-upcomingTasks-heading">Upcoming tasks:</h2>
+					<!-- <div class="todo-upcomingTasks flex">
+						<div class="upcomingTasks-lists flex">
+							<ion-icon
+								class="bullet-task"
+								name="ellipse-outline"
+							></ion-icon>
+							<input class="task-name" />
+						</div>
+
+						<div class="tasks-icons flex">
+							<ion-icon
+								class="edit-icon"
+								name="pencil-outline"
+							></ion-icon>
+							<ion-icon
+								class="delete-icon"
+								name="trash-outline"
+							></ion-icon>
+						</div>
+					</div> -->
+				</div>
+			</div>
+
+			<!-- Finished Tasks -->
+			<!-- <div class="todo-Finishedtasks-mainBox flex hide">
+				<div class="todo-finishedTasks-wrapper">
+					<h2 class="todo-finishedTasks-heading">Finished tasks:</h2>
+					<div class="todo-finishedTasks flex">
+						<div class="finishedTasks-lists flex">
+							<ion-icon
+								class="checked-task"
+								name="checkmark-done-outline"
+							></ion-icon>
+							<s class="finished-task-name task-name"
+								>Aditi's day out</s
+							>
+						</div>
+
+						<div class="tasks-icons flex">
+							<ion-icon
+								class="delete-icon"
+								name="trash-outline"
+							></ion-icon>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<!-- Ion icons scripts -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+
+		<!-- Main JavaScript -->
+		<script src="main.js"></script>
+	</body>
+</html>
