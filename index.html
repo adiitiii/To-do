@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>To-do Website</title>
+		<title>To do</title>
 		<link href="./css/style.css" rel="stylesheet" />
 	</head>
 	<body>
@@ -12,7 +12,10 @@
 		<div class="todo-wrapper">
 			<div class="main-heading__todo-wrapper flex">
 				<div class="initial-heading__todo-wrapper">Todays tasks</div>
-				<input class="after-heading__todo-wrapper hide" />
+				<input
+					class="after-heading__todo-wrapper hide"
+					name="updatedHeading"
+				/>
 				<div class="edit-heading__todo-wrapper">
 					<ion-icon class="edit-pen-icon" name="create"></ion-icon>
 				</div>
@@ -21,7 +24,7 @@
 			<!-- Adding tasks -->
 			<div class="add-tasks__todo-wrapper">
 				<div class="initial-screen-add">
-					<img src="./initial-screen-img.svg" class="initial-img" />
+					<img src="./initial-screen-img.png" class="initial-img" />
 				</div>
 
 				<!-- Add icon for adding tasks -->
@@ -40,6 +43,7 @@
 					<input
 						class="list-tasks"
 						id="task-name_user-input"
+						name="userInput"
 						placeholder="Add new task"
 					/>
 					<button class="add-task-btn">ADD</button>
@@ -50,53 +54,15 @@
 			<div class="todo-upcomingTasks-mainBox flex hide">
 				<div class="todo-upcomingTasks-wrapper">
 					<h2 class="todo-upcomingTasks-heading">Upcoming tasks:</h2>
-					<!-- <div class="todo-upcomingTasks flex">
-						<div class="upcomingTasks-lists flex">
-							<ion-icon
-								class="bullet-task"
-								name="ellipse-outline"
-							></ion-icon>
-							<input class="task-name" />
-						</div>
-
-						<div class="tasks-icons flex">
-							<ion-icon
-								class="edit-icon"
-								name="pencil-outline"
-							></ion-icon>
-							<ion-icon
-								class="delete-icon"
-								name="trash-outline"
-							></ion-icon>
-						</div>
-					</div> -->
 				</div>
 			</div>
 
 			<!-- Finished Tasks -->
-			<!-- <div class="todo-Finishedtasks-mainBox flex hide">
+			<div class="todo-finishedTasks-mainBox flex hide">
 				<div class="todo-finishedTasks-wrapper">
 					<h2 class="todo-finishedTasks-heading">Finished tasks:</h2>
-					<div class="todo-finishedTasks flex">
-						<div class="finishedTasks-lists flex">
-							<ion-icon
-								class="checked-task"
-								name="checkmark-done-outline"
-							></ion-icon>
-							<s class="finished-task-name task-name"
-								>Aditi's day out</s
-							>
-						</div>
-
-						<div class="tasks-icons flex">
-							<ion-icon
-								class="delete-icon"
-								name="trash-outline"
-							></ion-icon>
-						</div>
-					</div>
 				</div>
-			</div> -->
+			</div>
 		</div>
 
 		<!-- Ion icons scripts -->

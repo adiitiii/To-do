@@ -1,3 +1,7 @@
+/* *********************************************************** */
+/* GENERAL SETTING */
+/* *********************************************************** */
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -7,12 +11,26 @@
 html {
 	font-size: 62.5%;
 	font-family: "Inter", sans-serif;
-	background-color: #7ab6c1;
+	background-color: #af7ad5;
 }
 
 .flex {
 	display: flex;
 }
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/* *********************************************************** */
+/* INITIAL SCREEN */
+/* *********************************************************** */
+
+/* HEADING */
 
 .main-heading__todo-wrapper {
 	background-color: #ededed;
@@ -43,16 +61,18 @@ html {
 .edit-pen-icon {
 	margin-left: 2.5rem;
 	font-size: 2.7rem;
-	color: #7ab6c1;
+	color: #af7ad5;
 	margin-top: 1.5rem;
 	cursor: pointer;
 }
+
+/* BELOW HEADING */
 
 .initial-img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 25%;
+	width: 15%;
 	margin-bottom: 5rem;
 }
 
@@ -74,6 +94,12 @@ html {
 	color: #13131a;
 }
 
+/* *********************************************************** */
+/* SECOND SCREEN */
+/* *********************************************************** */
+
+/* ADD A NEW TASK */
+
 .after-icon-new-task {
 	align-items: center;
 	justify-content: center;
@@ -93,7 +119,7 @@ html {
 .add-task-btn {
 	padding: 1.9rem 4rem;
 	font-size: 2.4rem;
-	background-color: #24464d;
+	background-color: #543967;
 	color: #fff;
 	font-weight: 700;
 	border: none;
@@ -102,13 +128,14 @@ html {
 	margin-left: -1;
 }
 
+/* UPCOMING TASKS AND FINISHED TASKS */
+
 .todo-upcomingTasks-mainBox {
 	flex-direction: column;
-	margin-bottom: 3rem;
 	align-items: center;
 }
 
-.todo-Finishedtasks-mainBox {
+.todo-finishedTasks-mainBox {
 	flex-direction: column;
 	align-items: center;
 }
@@ -123,12 +150,17 @@ html {
 	text-transform: uppercase;
 	font-size: 2rem;
 	color: #fff;
-	margin-bottom: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.todo-finishedTasks-heading {
+	margin-top: 2.5rem;
 }
 
 .todo-upcomingTasks,
 .todo-finishedTasks {
 	flex-direction: row;
+	margin-top: 1.5rem;
 	align-items: center;
 	width: 700px;
 	justify-content: space-between;
@@ -143,12 +175,13 @@ html {
 }
 
 .upcomingTasks-lists,
-.tasks-icons {
+.finishedTasks-lists {
 	align-items: center;
 }
 
-.task-indicator-icon {
-	font-size: 2rem;
+.task-indicator-icon,
+.completed-task {
+	width: 20px;
 	margin-right: 1.8rem;
 }
 
@@ -157,6 +190,10 @@ html {
 	color: #24464d;
 	font-weight: 700;
 	margin-right: 6rem;
+	border: none;
+	outline: none;
+	background-color: #d9d9d9;
+	cursor: pointer;
 }
 
 .finished-task-name {
@@ -164,18 +201,10 @@ html {
 }
 
 .edit-icon {
-	font-size: 2rem;
+	width: 20px;
 	margin-right: 2rem;
 }
 
 .delete-icon {
-	font-size: 2rem;
-}
-
-.hide {
-	display: none;
-}
-
-.show {
-	display: block;
+	width: 20px;
 }
