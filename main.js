@@ -175,6 +175,7 @@ const addTask = (taskName) => {
 
 addTaskBtn.addEventListener("click", () => {
 	const taskName = upcomingTasksInput.value.trim();
+	upcomingTaskHeading.classList.remove("hide");
 
 	mainUp.classList.remove("hide");
 	if (taskName !== "") {
@@ -187,6 +188,7 @@ upcomingTasksInput.addEventListener("keydown", (e) => {
 	if (e.key === "Enter") {
 		const taskName = upcomingTasksInput.value.trim();
 
+		upcomingTaskHeading.classList.remove("hide");
 		mainUp.classList.remove("hide");
 		if (taskName !== "") {
 			addTask(taskName);
